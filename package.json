@@ -1,0 +1,10 @@
+{
+  "name": "portfolio_sviatoslav",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1"
+  },
+  "dependencies": {
+    "browser-sync": "^2.18.8"
+  }
+}
