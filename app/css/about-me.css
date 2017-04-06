@@ -10,7 +10,7 @@
   margin: 0;
   padding: 13px 20px;
   display: inline-block;
-  font-family: "fira_sansbook";
+  font-family: "fira_sansbook", sans-serif;
   color: #3ba8c0;
   font-size: 27px;
   font-weight: normal;
@@ -19,7 +19,7 @@
 }
 
 .about-box .aboutbox-body {
-	margin-bottom: 40px;
+	/*margin-bottom: 40px;*/
 }
 
 /* END General Styles */
@@ -60,20 +60,20 @@
 }
 
 .worksheet-item {
-	margin-bottom: 8px;
+	margin-bottom: 10px;
 }
 
 .worksheet-what {
 	float: left;
 	font-size: 16px;
-	font-family: 'fira_sansmedium';
+	font-family: 'fira_sansmedium', sans-serif;
 }
 
 .worksheet-into {
 	float: left;
 	margin-left: 25px;
 	font-size: 15px;
-	font-family: 'fira_sansbook';
+	font-family: 'fira_sansbook', sans-serif;
 	max-width: 218px;
 	overflow: hidden;
 }
@@ -100,3 +100,45 @@
 }
 
 /* END Work Sheet */
+
+/*Block #2*/
+.about-box ul {
+	margin: 0;
+	list-style: none;
+    padding-bottom: 40px;
+}
+
+.about-box ul .container-icon,
+.container-info {
+	display: inline-block;
+}
+
+.about-box ul .container-icon {
+    margin-right: 30px;
+}
+
+.container-icon .icon-item {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+
+.container-icon .work {
+    background: url("../images/style/icons/suitcase.png") 0 0 no-repeat;
+}
+
+.container-icon .education {
+    background: url("../images/style/icons/education.png") 0 0 no-repeat;
+}
+
+.container-icon .course {
+    background: url("../images/style/icons/course.png") 0 0 no-repeat;
+}
+
+.container-info p {
+	margin: 0;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+/* End Block #2*/
