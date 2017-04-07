@@ -1,0 +1,92 @@
+.form-center {
+    top: 50%; /* Отступ в процентах от верхнего края окна */
+    left: 50%; /* Отступ в процентах от левого края окна */
+    width: 590px; /* Ширина блока */
+    height: 500px; /* Высота блока */
+    position: absolute; /* Абсолютное позиционирование блока */
+    margin-top: -250px; /* Отрицательный отступ от верхнего края страницы, должен равняться половине высоты блока со знаком минус */
+    margin-left: -300px; /* Отрицательный отступ от левого края страницы, должен равняться половине ширины блока со знаком минус */
+}
+
+.form-container {
+    width: 590px;
+    text-align: center;
+    background-color: #eff3f7;
+    border-radius: 5px;
+    font-family: 'fira_sanslight', sans-serif;
+}
+
+.form-group {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.form-header {
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 15px 0;
+    color: white;
+    font-family: "fira_sansbook", sans-serif;
+    font-weight: normal;
+    font-size: 40px;
+    border-bottom: 15px solid #67dffa;
+    background-color: #48cbe8;
+    border-radius: 5px 5px 0 0;
+}
+
+.input-description, .input-form {
+    display: block;
+    margin: 0 auto;
+}
+
+.input-description {
+    font-size: 35px;
+    font-weight: lighter;
+    color: #959aa8;
+}
+
+.input-form {
+    box-sizing: border-box;
+    width: 425px;
+    margin-bottom: 15px;
+    border: 1px solid #67dffa;
+    border-radius: 5px;
+    padding: 22px;
+    font-size: 17px;
+}
+
+.submit-form {
+    width: 225px;
+    height: 55px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-size: 35px;
+    background-color: #48cbe8;
+    border: none;
+    border-bottom: 3px solid #3ba8c0;
+    border-radius: 5px;
+    font-family: 'fira_sanslight', sans-serif;
+    color: white;
+    line-height: 55px;
+}
+
+/* placeholder color */
+.input-form::-webkit-input-placeholder {
+    color: #67dffa;
+}
+
+.input-form:-moz-placeholder { /* Firefox 18- */
+    color: #67dffa;
+}
+
+.input-form::-moz-placeholder {  /* Firefox 19+ */
+    color: #67dffa;
+
+}
+
+.input-form:-ms-input-placeholder {
+    color: #67dffa;
+}
+/* end placeholder color */
