@@ -124,15 +124,15 @@
 }
 
 .container-icon .work {
-    background: url("../images/style/icons/suitcase.png") 0 0 no-repeat;
+    background: url("../images/suitcase.png") 0 0 no-repeat;
 }
 
 .container-icon .education {
-    background: url("../images/style/icons/education.png") 0 0 no-repeat;
+    background: url("../images/education.png") 0 0 no-repeat;
 }
 
 .container-icon .course {
-    background: url("../images/style/icons/course.png") 0 0 no-repeat;
+    background: url("../images/course.png") 0 0 no-repeat;
 }
 
 .container-info p {

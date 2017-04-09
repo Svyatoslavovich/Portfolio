@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Связаться со мной</title>
+    <!-- SEO -->
+    <meta name="description" content="web_developer_portfolio">
+    <meta name="keywords" content="web developer portfolio">
+    <meta name="author" content="Sviatoslav Kashyrin">
+    <!-- favicon.ico-->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#ffffff">
+    <!-- bower CSS -->
+    <link rel="stylesheet" href="bower/normalize-css/normalize.css">
+    <!-- FONT CSS -->
+    <link rel="stylesheet" href="fonts/fira.css">
+    <link rel="stylesheet" href="fonts/proxima-nova.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/contact-me.css">
+    <!-- modernizr -->
+    <script src="bower/modernizer/modernizr.js"></script>
+    <!-- recaptcha -->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+
+<body>
+<!-- [if IE 7]>
+<style type="text/css">s
+       < p class
+
+=
+"browsehappy"
+>
+Вы используете < strong > устаревший<
+
+/
+strong > браузер. Пожалуйста < a href
+
+=
+"http://browsehappy.com/"
+>
+обновите<
+
+/
+a > его.<
+
+/
+p >
+</style>
+<![endif]-->
+<div class="wrapper">
+    <div class="main-content">
+        <!-- HEADER -->
+        <header class="page-header">
+            <div class="container-big">
+                <a class="header-logo-link">
+                    <img src="images/web-developer-logo.png" alt="logo-img" class="logo-img">
+                    <span class="header-logo-text">Сайт портфолио</span>
+                </a>
+                <ul class="socials">
+                    <li class="socials-item">
+                        <a href="https://vk.com/id413453700" class="socials-link vk" target="_blank">vk.com</a>
+                    </li>
+                    <li class="socials-item">
+                        <a href="https://twitter.com/" class="socials-link tw" target="_blank">twitter.com</a>
+                    </li>
+                    <li class="socials-item">
+                        <a href="https://facebook.com/" class="socials-link fb" target="_blank">facebook.com</a>
+                    </li>
+                    <li class="socials-item">
+                        <a href="https://github.com/Svyatoslavovich" class="socials-link gt"
+                           target="_blank">gihub.com</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div class="container">
+            <aside class="sidebar">
+                <nav class="navigation">
+                    <ul class="navigation-list">
+                        <li class="navigation-item">
+                            <a href="index.html" class="navigation-link">Обо мне</a>
+                        </li>
+                        <li class="navigation-item">
+                            <a href="my-work.html" class="navigation-link">Мои работы</a>
+                        </li>
+                        <li class="navigation-item current">
+                            <a href="contact-me.html" class="navigation-link">Связаться со мной</a>
+                        </li>
+                    </ul>
+                </nav>
+                <address class="contacts">
+                    <h2>Контакты</h2>
+                    <ul class="contacts-block">
+                        <li>
+                            <a href="mailto:w3proger@gmail.com" class="first contact-item">
+                                <span class="contact-icon mail"></span>
+                                <span class="info">w3proger@gmail.com</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:380-95-78-27-598" class="second contact-item">
+                                <span class="contact-icon phone"></span>
+                                <span class="info">380-95-78-27-598</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="skype:login_skype?call" class="third contact-item">
+                                <span class="contact-icon skype"></span>
+                                <span class="info">Nick</span>
+                            </a>
+                        </li>
+                    </ul>
+                </address>
+            </aside>
+
+            <div class="variable-content">
+                <div class="contact-container">
+                    <h2 class="contact-header">У вас интересный проект? Напишите мне!</h2>
+                    <form action="https://www.google.com/recaptcha/api/siteverify" method="POST" class="form-container">
+
+                        <div class="form-group group-name clearfix">
+                            <label for="name" class="form-item-label">Имя</label>
+                            <input type="text" id="name" class="form-input form-item-input" placeholder="Как к Вам обращаться">
+                        </div>
+
+                        <div class="form-group group-email clearfix">
+                            <label for="email" class="form-item-label">Email</label>
+                            <input type="email" id="email" class="form-input form-item-input" placeholder="Куда мне писать">
+                        </div>
+
+                        <div class="form-group group-message">
+                            <label for="message" class="form-item-label">Сообщение</label>
+                            <textarea id="message" class="form-input form-item-placeholder" placeholder="Кратко в чем суть" rows="10"></textarea>
+                        </div>
+                        <!-- ReCapcha-->
+                        <div class="g-recaptcha" data-sitekey="6LdzKxwUAAAAAPTU0FiIvb388RRrKNRG-Vjw8HBU"></div>
+                        <!-- ReCapcha-->
+                        <div class="form-button clearfix">
+                            <button type="submit" class="submit-form button-submit">Отправить</button>
+                            <button type="reset" class="submit-form button-reset">Очистить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<!-- DNO -->
+<footer class="page-footer">
+    <div class="container">
+        <div class="lock">
+            <a href="login.html" class="lock-inner">Войти</a>
+        </div>
+        <div class="copyright">Каширин Святослав &copy; 2017</div>
+    </div>
+</footer>
+<script src="bower/jquery/dist/jquery.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

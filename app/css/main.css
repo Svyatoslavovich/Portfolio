@@ -4,7 +4,7 @@ html {
 
 body {
     height: 100%;
-    background-image: url(../images/style/pattern.png);
+    background-image: url(../images/pattern.png);
     font: normal 1em 'fira_sanslight';
     color: #4a545d;
 }
@@ -75,7 +75,7 @@ body {
     height: 100%;
     width: 100%;
     text-indent: -9999px;
-    background-image: url("../images/style/social/social-sprite.png");
+    background-image: url("../images/social-sprite.png");
 }
 
 .socials .socials-link.vk {
@@ -180,7 +180,7 @@ address .contacts-block {
 .contacts-block li .contact-item {
     display: block;
     padding: 10px 0 10px 40px;
-    font-size: 18px;
+    font-size: 16px;
     color: white;
     text-decoration: none;
 }
@@ -215,15 +215,15 @@ address .contacts-block {
 }
 
 .contacts-block .contact-item .mail {
-    background: url("../images/style/contacts/email.png") 0 0 no-repeat;
+    background: url("../images/contacts/email.png") 0 0 no-repeat;
 }
 
 .contacts-block .contact-item .phone {
-    background: url("../images/style/contacts/phone.png") 0 0 no-repeat;
+    background: url("../images/contacts/phone.png") 0 0 no-repeat;
 }
 
 .contacts-block .contact-item .skype {
-    background: url("../images/style/contacts/skype.png") 0 0 no-repeat;
+    background: url("../images/contacts/skype.png") 0 0 no-repeat;
 }
 /* END address */
 
@@ -278,12 +278,12 @@ address .contacts-block {
     line-height: 2.2;
     color: #4a545d;
     text-decoration: none;
-    background: url(../images/style/icons/lock-close.png) no-repeat;
+    background: url(../images/lock-close.png) no-repeat;
     padding-left: 24px;
 }
 
 .lock .lock-inner:hover {
-    background: url(../images/style/icons/lock-open.png) no-repeat;
+    background: url(../images/lock-open.png) no-repeat;
 }
 /* END login */
 
