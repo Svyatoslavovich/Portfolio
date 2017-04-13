@@ -2,8 +2,8 @@
     min-height: 840px;
     margin-bottom: 40px;
     background-color: #EFF3F7;
-    web-kit-border-radius: 5px;
-    moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
     border-radius: 5px;
     font-family: 'fira_sanslight', sans-serif;
 }
@@ -13,8 +13,8 @@
     margin-bottom: 50px;
     padding: 45px;
     border-bottom: 15px solid #51DAF8;
-    web-kit-border-radius: 5px 5px 0 0;
-    moz-border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
     border-radius: 5px 5px 0 0;
     background-color: #48cbe8;
     text-align: center;
@@ -63,8 +63,8 @@
     box-sizing: border-box;
     width: 100%;
     border: 1px solid #67dffa;
-    web-kit-border-radius: 5px;
-    moz-border-radius: 5px
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
     border-radius: 5px;
     font-size: 13px;
     color: #67dffa;
@@ -111,8 +111,8 @@
     font-weight: 600;
     font-size: 20px;
     border: none;
-    web-kit-border-radius: 5px;
-    moz-border-radius: 5px
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
     border-radius: 5px;
     font-family: 'fira_sanslight', sans-serif;
     color: white;
@@ -120,34 +120,33 @@
 }
 
 .button-submit {
-    box-sizing: border-box;
     float: left;
     background-color: #48cbe8;
-    webkit-box-shadow: inset 0 -3px 0 0 #3ba8c0;
-    moz-box-shadow: inset 0 -3px 0 0 #3ba8c0;
+    -webkit-box-shadow: inset 0 -3px 0 0 #3ba8c0;
+    -moz-box-shadow: inset 0 -3px 0 0 #3ba8c0;
     box-shadow: inset 0 -3px 0 0 #3ba8c0;
 }
 
 .button-reset {
     float: right;
     background-color: #849db5;
-    webkit-box-shadow: inset 0 -3px 0 0 #687b8f;
-    moz-box-shadow: inset 0 -3px 0 0 #687b8f;
+    -webkit-box-shadow: inset 0 -3px 0 0 #687b8f;
+    -moz-box-shadow: inset 0 -3px 0 0 #687b8f;
     box-shadow: inset 0 -3px 0 0 #687b8f;
 }
 
 .button-submit:hover,
 .button-reset:hover {
     margin-top: 1px;
-    webkit-box-shadow: none;
-    moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
     box-shadow: none;
 }
 
 .button-submit:active,
 .button-reset:active {
     margin-top: 2px;
-    webkit-shadow: inset 0 3px 0 0 #687b8f;
-    moz-box-shadow: inset 0 3px 0 0 #687b8f;
+    -webkit-box-shadow: inset 0 3px 0 0 #687b8f;
+    -moz-box-shadow: inset 0 3px 0 0 #687b8f;
     box-shadow: inset 0 3px 0 0 #687b8f;
 }

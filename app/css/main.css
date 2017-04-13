@@ -1,3 +1,11 @@
+* {
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /*padding: 0;*/
+}
+
 html {
     height: 100%;
 }
@@ -195,6 +203,8 @@ address .contacts-block {
 
 .contacts-block li .third.contact-item {
     background-color: #51daf8;
+    border-radius: 0 0 5px 5px;
+
 }
 
 .contacts-block li .contact-item .info {

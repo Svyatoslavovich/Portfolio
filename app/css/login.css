@@ -1,5 +1,5 @@
 .form-center {
-    top: 50%; /* Отступ в процентах от верхнего края окна */
+    top: 45%; /* Отступ в процентах от верхнего края окна */
     left: 50%; /* Отступ в процентах от левого края окна */
     width: 590px; /* Ширина блока */
     height: 500px; /* Высота блока */
@@ -49,7 +49,7 @@
 .input-form {
     box-sizing: border-box;
     width: 425px;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     border: 1px solid #67dffa;
     border-radius: 5px;
     padding: 22px;
@@ -78,15 +78,30 @@
 .submit-form {
     width: 225px;
     height: 55px;
-    margin-top: 15px;
     margin-bottom: 25px;
     font-weight: 600;
     font-size: 35px;
     background-color: #48cbe8;
     border: none;
-    border-bottom: 3px solid #3ba8c0;
-    border-radius: 5px;
+    border-radius: 10px;
     font-family: 'fira_sanslight', sans-serif;
     color: white;
     line-height: 55px;
+    -webkit-box-shadow: inset 0 -4px 0 0 #3ba8c0;
+    -moz-box-shadow: inset 0 -4px 0 0 #3ba8c0;
+    box-shadow: inset 0 -4px 0 0 #3ba8c0;
+}
+
+.submit-form:hover {
+    margin-top: 1px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.submit-form:active {
+    margin-top: 2px;
+    -webkit-box-shadow: inset 0 4px 0 0 #3ba8c0;
+    -moz-box-shadow: inset 0 4px 0 0 #3ba8c0;
+    box-shadow: inset 0 4px 0 0 #3ba8c0;
 }
