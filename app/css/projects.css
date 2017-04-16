@@ -1,9 +1,9 @@
+/*My projects and labels*/
+
 .project-container {
     margin-bottom: 25px;
     min-height: 840px;
-    background-color: #EFF3F7;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
+    background-color: #EFF1F5;
     border-radius: 5px;
     font-family: 'fira_sanslight', sans-serif;
 }
@@ -13,20 +13,20 @@
     padding: 13px 20px;
     display: inline-block;
     font-family: "fira_sansbook", sans-serif;
-    color: #3ba8c0;
+    color: #3bb9c0;
     font-size: 27px;
     font-weight: normal;
-    border-bottom: 2px solid #3ba8c0;
+    border-bottom: 2px solid #3bb9c0;
 }
 
 .project-wrapper {
     width: 605px;
     margin: 0 auto;
-    font-size: 0;
 }
 
 .project-list {
     display: block;
+    font-size: 0;
 }
 
 .project-item {
@@ -36,6 +36,7 @@
     display: inline-block;
     vertical-align: top;
     text-align: center;
+    font-size: 14px;
 }
 
 .hover-img {
@@ -44,9 +45,9 @@
     margin-bottom: 5px;
     font-size: 16px;
     border-radius: 5px;
-    border: 1px solid #3ba8c0;
+    border: 2px solid #3bb9c0;
     overflow: hidden;
-    background-color: #ecfbff;
+    background-color: white;
     background-image: url("../images/favorites.png");
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -58,7 +59,7 @@
     bottom:0;
     right:0;
     top:0;
-    background: rgba(1, 108, 164, 0.8);
+    background: rgba(59, 185, 192, 0.9);
     display:none;
 }
 
@@ -83,13 +84,13 @@
     vertical-align: middle;
     padding: 3px;
     line-height: 12px;
-    -webkit-transform: scale(1,1);
+    -webkit-transform: scale(0.1, 0.1);
     -webkit-transition-timing-function: ease-out;
     -webkit-transition-duration: 550ms;
-    -moz-transform: scale(1,1);
+    -moz-transform: scale(0.1, 0.1);
     -moz-transition-timing-function: ease-out;
     -moz-transition-duration: 550ms;
-    transform: scale(1,1);
+    transform: scale(0.1, 0.1);
     transition-timing-function: ease-out;
     transition-duration: 550ms;
     -webkit-border-radius: 5px;
@@ -108,16 +109,15 @@
     -moz-transform: scale(1.2,1.2);
     -moz-transition-timing-function: ease-out;
     -moz-transition-duration: 550ms;
+    transform: scale(1.2,1.2);
+    transition-timing-function: ease-out;
+    transition-duration: 550ms;
 }
 
 .project-img {
     z-index: 50;
     width: 180px;
     height: 135px;
-}
-
-.empty-item {
-    border: 1px dashed #3ba8c0;
 }
 
 .project-item:nth-child(3n+3) {
@@ -128,10 +128,22 @@
     width: 100%;
     font-size: 12px;
     font-style: italic;
-    color: #3ba8c0;
+    color: #636567;
     text-decoration: none;
 }
 
 .project-description {
     font-size: 14px;
+}
+
+/* Empty project */
+.empty-item {
+    border: 2px dashed #3bb9c0;
+}
+
+
+/* Modal window */
+
+#add-project-popup {
+    display: none;
 }

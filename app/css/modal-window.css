@@ -1,0 +1,202 @@
+.overlay {
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1000;
+}
+
+.visible {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-top: -200px;
+    overflow: hidden;
+    z-index: 2000;
+    width: 365px;
+    margin-left: -185px;
+}
+
+.modal-wrapper {
+    width: 365px;
+    background-color: #EFF1F5;
+    border-radius: 5px;
+    font-family: 'fira_sansbook', sans-serif;
+    opacity: 1;
+}
+
+.modal-header {
+    position: relative;
+    margin-bottom: 10px;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+    background-color: #54d6e5;
+    border-bottom: 10px solid #6ee9f8;
+}
+
+.modal-title {
+    padding: 15px 10px;
+    color: white;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: normal;
+}
+
+.b-close {
+    position: absolute;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    top: 15px;
+    right: 10px;
+    border: none;
+    background: url("../images/b_close.png") 0 0 no-repeat;
+}
+
+.modal-body {
+    padding: 0 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+/*File-upload*/
+.fileupload-wrapper {
+    background-color: #f5f5f5;
+    font-size: 0;
+}
+
+.fileupload-wrapper > input {
+    display: inline-block;
+    width: 275px;
+    -webkit-border-radius: 5px 0 0 5px;
+    -moz-border-radius: 5px 0 0 5px;
+    border-radius: 5px 0 0 5px;
+    font-size: 13px;
+    vertical-align: middle;
+
+}
+
+.fileupload-label {
+    display: inline-block;
+    width: 50px;
+    -webkit-border-radius: 0 5px 5px 0;
+    -moz-border-radius: 0 5px 5px 0;
+    border-radius: 0 5px 5px 0;
+    font-size: 13px;
+    height: 40px;
+    line-height: 40px;
+    background: url("../images/upload.png") 50% 50% no-repeat;
+    background-color: #48cbe8;
+    vertical-align: middle;
+}
+
+.fileupload {
+    display: none;
+}
+
+/*File-upload*/
+
+.label, .input-form {
+    display: block;
+}
+
+.label {
+    color: #484b50;
+    font-size: 16px;
+}
+
+.input {
+    width: 100%;
+    border: 1px solid #67dffa;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 13px;
+    padding-left: 10px;
+    height: 40px;
+    line-height: 40px;
+    color: #67dffa;
+}
+
+.textarea {
+    width: 100%;
+    height: 110px;
+    border: 1px solid #67dffa;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 13px;
+    padding: 10px;
+    color: #67dffa;
+}
+
+/* placeholder color */
+.textarea::placeholder,
+.input::-webkit-input-placeholder {
+    color: #67dffa;
+}
+
+.textarea::placeholder,
+.input:-moz-placeholder { /* Firefox 18- */
+    color: #67dffa;
+}
+
+.textarea::placeholder,
+.input::-moz-placeholder { /* Firefox 19+ */
+    color: #67dffa;
+}
+
+.textarea::placeholder,
+.input:-ms-input-placeholder {
+    color: #67dffa;
+}
+
+.textarea::placeholder,
+.input::placeholder {
+    color: #67dffa;
+}
+
+/* end placeholder color */
+
+.btn-wrapper {
+    padding-bottom: 25px;
+}
+
+.btn {
+    display: block;
+    margin: 0 auto;
+    width: 140px;
+    height: 40px;
+    font-weight: 600;
+    font-size: 20px;
+    border: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-family: 'fira_sanslight', sans-serif;
+    color: white;
+    line-height: 40px;
+    background-color: #48cbe8;
+    -webkit-box-shadow: inset 0 -3px 0 0 #3ba8c0;
+    -moz-box-shadow: inset 0 -3px 0 0 #3ba8c0;
+    box-shadow: inset 0 -3px 0 0 #3ba8c0;
+}
+
+.btn:hover {
+    margin-top: 1px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.btn:active {
+    margin-top: 2px;
+    -webkit-box-shadow: inset 0 3px 0 0 #687b8f;
+    -moz-box-shadow: inset 0 3px 0 0 #687b8f;
+    box-shadow: inset 0 3px 0 0 #687b8f;
+}

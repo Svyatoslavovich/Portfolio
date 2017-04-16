@@ -1,7 +1,7 @@
 .contact-container {
     min-height: 840px;
     margin-bottom: 40px;
-    background-color: #EFF3F7;
+    background-color: #EFF1F5;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
@@ -12,12 +12,12 @@
     margin: 0;
     margin-bottom: 50px;
     padding: 45px;
-    border-bottom: 15px solid #51DAF8;
+    text-align: center;
     -webkit-border-radius: 5px 5px 0 0;
     -moz-border-radius: 5px 5px 0 0;
     border-radius: 5px 5px 0 0;
-    background-color: #48cbe8;
-    text-align: center;
+    background-color: #54d6e5;
+    border-bottom: 15px solid #6ee9f8;
     color: white;
 }
 
@@ -60,7 +60,6 @@
 }
 
 .form-input {
-    box-sizing: border-box;
     width: 100%;
     border: 1px solid #67dffa;
     -webkit-border-radius: 5px;
@@ -76,7 +75,7 @@
     line-height: 40px;
 }
 
-.form-item-placeholder {
+.form-item-textarea {
     display: block;
     height: 180px;
     padding: 10px;
@@ -97,6 +96,10 @@
 }
 
 .form-input:-ms-input-placeholder {
+    color: #67dffa;
+}
+
+.input::placeholder {
     color: #67dffa;
 }
 /* end placeholder color */

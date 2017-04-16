@@ -29,7 +29,7 @@ body {
 
 .page-header {
     height: 119px;
-    background-color: #eff3f7;
+    background-color: #EFF1F5;
     position: relative;
     margin-bottom: 39px;
 }
@@ -136,7 +136,7 @@ body {
 .navigation .navigation-list .navigation-item.current {
     margin: 0 0 -2px 0;
     padding-left: 11px;
-    background-color: #3ba8c0;
+    background-color: #3bb9c0;
     color: #F8fcfd;
 }
 
@@ -249,7 +249,7 @@ address .contacts-block {
 /* DNO */
 
 .page-footer {
-    background-color: #eff3f7;
+    background-color: #EFF1F5;
     font-family: 'fira_sanslight', sans-serif;
     color: #4a525d;
 }

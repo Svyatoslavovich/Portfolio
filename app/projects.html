@@ -23,6 +23,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/modal-window.css">
     <!-- modernizr -->
     <script src="bower/modernizer/modernizr.js"></script>
 </head>
@@ -54,7 +55,8 @@ p >
 <![endif]-->
 <div class="wrapper">
     <div class="main-content">
-        <!-- HEADER -->
+
+        <!-- Header -->
         <header class="page-header">
             <div class="container-big">
                 <a class="header-logo-link">
@@ -79,6 +81,8 @@ p >
             </div>
         </header>
         <div class="container">
+
+            <!--Navigation-->
             <aside class="sidebar">
                 <nav class="navigation">
                     <ul class="navigation-list">
@@ -118,8 +122,11 @@ p >
                 </address>
             </aside>
 
+            <!--Major content-->
             <div class="variable-content">
-                <div class="project-container">
+
+                <!--Project container-->
+                <section class="project-container">
                     <h2 class="project-header">Мои работы</h2>
                     <div class="project-wrapper">
                         <div class="project-list">
@@ -129,13 +136,13 @@ p >
                                     <a href="#">
                                         <div class="hover-layer">
                                             <div class="inner-block">
-                                                <span class="inner-link">название</span>
+                                                <span class="inner-link">law-school.ru</span>
                                             </div>
                                         </div>
                                     </a>
                                 </div>
-                                <a href="" class="project-link">www.site.com</a>
-                                <div class="project-description">Информация о проекте 1 превью и 2 строки...</div>
+                                <a href="" class="project-link">law-school.ru</a>
+                                <div class="project-description">Сайт юридического факультета Сумского НАУ</div>
                             </li>
 
                             <li class="project-item">
@@ -186,25 +193,84 @@ p >
 
                             <li class="project-item">
                                 <div class="hover-img empty-item">
-                                    <a href="#">
+                                    <a id="add-new-item" href="#" onClick="getElementById('add-project-popup').style.display='block';" class="add-new-link">
                                         <div class="hover-layer">
                                             <div class="inner-block">
-                                                <span class="inner-link">Загрузить</span>
+                                                <span class="inner-link">Добавить!</span>
                                             </div>
                                         </div>
                                     </a>
                                 </div>
-                                <a href="" class="project-link">www.site.com</a>
-                                <p class="project-description">Информация о проекте 1 превью и 2 строки...</p>
                             </li>
+
+                        </div>
+                    </div>
+                </section>
+
+                <!--Modal Window-->
+                <div id="add-project-popup">
+                    <div class="overlay">
+                        <div class="visible">
+                            <div class="modal-wrapper">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Добавление проекта</h4>
+                                    <button type="button" class="b-close" onClick="getElementById('add-project-popup').style.display='none';"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form action="#" id="add-new-project" role="form" class="modal-form">
+                                        <div class="serv-mes error-mes"></div>
+                                        <div class="serv-mes success-mes"></div>
+                                        <!--Project name-->
+                                        <div class="form-group">
+                                            <label for="projectName" class="label">Название проекта</label>
+                                            <input id="projectName" placeholder="Введите название"
+                                                   qtip-content="Вы не ввели название"
+                                                   name="projectName" type="text" class="input">
+                                        </div>
+                                        <!--Project picture-->
+                                        <div class="form-group">
+                                            <div id="uploadFile" class="fileupload-wrapper">
+                                                <span class="label">Картинка проекта</span>
+
+                                                <input id="filename" placeholder="Загрузите изображение"
+                                                       qtip-content="Вы не выбрали изображение"
+                                                       name="filename" class="input" disabled>
+
+                                                <label class="fileupload-label">
+                                                    <input id="fileupload" type="file" name="files[]"
+                                                           class="fileupload">
+                                                    <input id="fileurl" type="hidden" name="fileurl">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="projectUrl" class="label">URL проекта</label>
+                                            <input id="projectUrl" placeholder="Добавтье ссылку"
+                                                   qtip-content="Вы не добавили ссылку"
+                                                   name="projectUrl" type="text" class="input">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="projectDesc" class="label">Описание</label>
+                                            <textarea id="projectDesc" placeholder="Пара слов о вашем проекте" rows="3"
+                                                      qtip-content="Описание проекта обязательно"
+                                                      name="projectDesc" class="textarea"></textarea>
+                                        </div>
+                                        <div class="btn-wrapper">
+                                            <button type="submit" class="btn">Добавить</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 </div>
-<!-- DNO -->
+
+<!-- Footer -->
 <footer class="page-footer">
     <div class="container">
         <div class="lock">
@@ -214,6 +280,7 @@ p >
     </div>
 </footer>
 <script src="bower/jquery/dist/jquery.js"></script>
-<script src="js/main.js"></script>
+<script src="bower/bPopup/jquery.bpopup.js"></script>
+<script src="js/add_project.js"></script>
 </body>
 </html>
