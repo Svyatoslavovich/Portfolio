@@ -102,6 +102,13 @@
     text-decoration: none;
 }
 
+.icon-link {
+    width: 54px;
+    height: 54px;
+    /*line-height: 50px;*/
+    background: url("../images/arrow.png") 0 0 no-repeat;
+}
+
 .hover-layer:hover .inner-link {
     -webkit-transform: scale(1.2,1.2);
     -webkit-transition-timing-function: ease-out;
