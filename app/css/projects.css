@@ -2,7 +2,6 @@
 
 .project-container {
     margin-bottom: 25px;
-    min-height: 840px;
     background-color: #EFF1F5;
     border-radius: 5px;
     font-family: 'fira_sanslight', sans-serif;
@@ -26,6 +25,7 @@
 
 .project-list {
     display: block;
+    padding-bottom: 50px;
     font-size: 0;
 }
 
@@ -140,7 +140,6 @@
 .empty-item {
     border: 2px dashed #3bb9c0;
 }
-
 
 /* Modal window */
 
