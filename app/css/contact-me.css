@@ -120,6 +120,7 @@
     font-family: 'fira_sanslight', sans-serif;
     color: white;
     line-height: 40px;
+    outline: none;
 }
 
 .button-submit {

@@ -4,17 +4,19 @@
 // self-invoking function
 var myModule = (function () {
 
+    // Инициализирует наш модуль
     var initinside = function () {
         _setUpListeners();
     };
 
+    // Прослушивает события
     var _setUpListeners = function () {
         // Прослушка событий
         $('#add-new-item').on('click', _showModal); // Поведение модального окна
         $('#add-new-project').on('submit', _addProject); // Валидация формы
     };
 
-
+    // Работает с модальным окном
     var _showModal = function (event) {
         console.log("Вызов модального окна");
         event.preventDefault();
@@ -28,57 +30,68 @@ var myModule = (function () {
             transitionClose: 'slideBack',
             onClose: function () {
                 console.log("Вы закрыли модальное окно");
-                form.find('.error-mes').text('').hide();
+                form.find('.server-mes').text('').hide();
             }
         });
     };
 
+    // Добавляет проект
     var _addProject = function (event) {
         // console.log("Добавление проекта");
         event.preventDefault();
         // Обьявляем переменные
         var form = $(this),
-            url = 'add_project.php';
-            data = form.serialize();
+            url = 'add_project.php',
+            serverGiveMeAnAnswer = _ajaxForm(form, url);
 
-        // console.log(data);
+        console.log(data);
 
-        // Запрос на сервер
-        $.ajax({
-            url : url,
+        serverGiveMeAnAnswer.done(function (answer) {
+            var successBox = form.find('.success-mes'),
+                errorBox = form.find('.error-mes');
+            if (answer.status === 'success') {
+                successBox.text(answer.text).show();
+                errorBox.text('').hide();
+            } else {
+                errorBox.text(answer.text).show();
+                successBox.text(answer.text).show();
+            }
+        })
+    };
+
+    // Универсальная функция
+    // Для ее работы используются:
+    // "form" - форма
+    // "url" - адрес php файла
+    // 1. Собирает данные из формы
+    // 2. Проверяет форму
+    // 3. Делает запрос на сервер, и возвращает ответ
+    var _ajaxForm = function (form, url) {
+
+        // if (!valid) return false;
+
+        data = form.serialize();
+
+        var result = $.ajax({
+            url: url,
             type: 'POST',
             dataType: 'json',
             data: data
-        })
-            .done(function (answer) {
-                console.log(answer);
-                if(answer.status === 'success') {
-                    console.log(answer.text);
-                    form.find('.success-mes').text(answer.text).show();
-                } else {
-                    console.log(answer.text);
-                    form.find('.error-mes').text(answer.text).show();
-                }
-            })
-            .fail(function (answer) {
-                form.find('.error-mes').text("ERROR! Couldn't connect to the server!");
-                console.log("ERROR! Couldn't connect to the server!");
+        }).fail(function (ans) {
+            console.log("Проблемы в PHP");
+            form.find('error-mes').text('На сервере произошла ошибка!').show();
+        });
 
-            })
+        return result;
+
     };
 
-    var _ajaxForm = function () {
-        // 1. Проверка формы
-        // 2, Сбор данных из формы
-        // 3. Отправка данных на сервер
-    }
-
-    // Возвращает функцию
+    // Возвращает объект (публичные методы)
     return {
         init: initinside
     }
 })();
 
-// Обращаемся к обьекту, в которой лежит наша функция (метод);
+// Обращаемся к обьекту, в котором лежит наша функция (метод);
 myModule.init();
 
