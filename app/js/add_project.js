@@ -54,7 +54,7 @@ var myModule = (function () {
                 errorBox.text('').hide();
             } else {
                 errorBox.text(answer.text).show();
-                successBox.text(answer.text).show();
+                successBox.text(answer.text).hide();
             }
         })
     };
@@ -79,7 +79,7 @@ var myModule = (function () {
             data: data
         }).fail(function (ans) {
             console.log("Проблемы в PHP");
-            form.find('error-mes').text('На сервере произошла ошибка!').show();
+            form.find('.error-mes').text('На сервере произошла ошибка!').show();
         });
 
         return result;
@@ -94,4 +94,3 @@ var myModule = (function () {
 
 // Обращаемся к обьекту, в котором лежит наша функция (метод);
 myModule.init();
-
